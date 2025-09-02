@@ -99,59 +99,110 @@
       </div>
     </section>
 
-    <section id="servicios">
-      <h3>Servicios y tarifas (UF)</h3>
-      <table aria-label="Servicios">
-        <thead>
-          <tr>
-            <th>Servicio</th>
-            <th>Detalle</th>
-            <th>Valor (UF)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Identificación taxonómica de Macrofauna Bentónica</td>
-            <td>Abundancia y Biomasa</td>
-            <td>0,8</td>
-          </tr>
-          <tr>
-            <td>Índice AMBI (Índice Biótico Marino AZTI)</td>
-            <td>Valor según magnitud del proyecto</td>
-            <td>Variable</td>
-          </tr>
-          <tr>
-            <td rowspan="3">Análisis de Zooplancton</td>
-            <td>Biovolumen</td>
-            <td>0,3</td>
-          </tr>
-          <tr>
-            <td>Identificación de grupos mayores</td>
-            <td>0,3</td>
-          </tr>
-          <tr>
-            <td>Identificación a nivel de especie</td>
-            <td>0,8</td>
-          </tr>
-          <tr>
-            <td>Ictioplancton</td>
-            <td>Identificación</td>
-            <td>0,7</td>
-          </tr>
-          <tr>
-            <td>Caligus rogercresseyi</td>
-            <td>Presencia y cuantificación</td>
-            <td>0,6</td>
-          </tr>
-          <tr>
-            <td>Identificación de Fitoplancton</td>
-            <td>Análisis taxonómico</td>
-            <td>0,6</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+ <section id="servicios">
+  <h2>Servicios</h2>
 
+  <div class="servicio">
+    <h3>Identificación taxonómica de Macrofauna Bentónica</h3>
+    <ul>
+      <li>Abundancia y Biomasa</li>
+    </ul>
+  </div>
+
+  <div class="servicio">
+    <h3>Índice AMBI (Índice Biótico Marino AZTI)</h3>
+    <ul>
+      <li>Valor según magnitud del proyecto</li>
+    </ul>
+  </div>
+
+  <div class="servicio">
+    <h3>Análisis de Zooplancton</h3>
+    <ul>
+      <li>Biovolumen</li>
+      <li>Identificación de grupos mayores</li>
+      <li>Identificación a nivel de especie</li>
+    </ul>
+  </div>
+
+  <div class="servicio">
+    <h3>Ictioplancton</h3>
+    <ul>
+      <li>Identificación</li>
+    </ul>
+  </div>
+
+  <div class="servicio">
+    <h3>Caligus rogercresseyi</h3>
+    <ul>
+      <li>Presencia y cuantificación</li>
+    </ul>
+  </div>
+
+  <div class="servicio">
+    <h3>Identificación de Fitoplancton</h3>
+    <ul>
+      <li>Análisis taxonómico</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CSS para estilizar los servicios -->
+<style>
+  /* Bloque general de servicios */
+  #servicios {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Fondo suave para la sección */
+  }
+
+  #servicios h2 {
+    text-align: center;
+    font-size: 2em;
+    color: #2c3e50; /* Título principal */
+    margin-bottom: 30px;
+  }
+
+  /* Cada servicio */
+  .servicio {
+    background-color: #ffffff; /* Fondo blanco para destacar */
+    border-left: 5px solid #1abc9c; /* Barra lateral de color */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+
+  .servicio:hover {
+    transform: translateY(-5px);
+  }
+
+  .servicio h3 {
+    font-size: 1.5em;
+    color: #16a085; /* Color principal de título */
+    margin-bottom: 10px;
+  }
+
+  .servicio ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #34495e; /* Color de texto */
+    font-size: 1.1em;
+  }
+
+  /* Opcional: mejorar legibilidad en dispositivos móviles */
+  @media (max-width: 600px) {
+    .servicio {
+      padding: 15px;
+    }
+    .servicio h3 {
+      font-size: 1.3em;
+    }
+    .servicio ul {
+      font-size: 1em;
+    }
+  }
+</style>
     <section id="laboratorio" class="grid cols-2">
       <div class="card p24">
         <h3>Nuestro laboratorio</h3>
