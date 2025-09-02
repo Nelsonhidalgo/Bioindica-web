@@ -6,73 +6,62 @@
   <title>Bioindicador Lab — Servicios Ambientales Marinos</title>
   <meta name="description" content="Bioindicador Lab: identificación taxonómica de macrobentos, zooplancton y fitoplancton. Laboratorio sustentable 100% energía renovable en Concepción, Biobío." />
   <style>
-    :root{
-      --azul:#0b6fbf; 
-      --verde:#0a9d8c; 
-      --gris:#334155;
-      --claro:#f1f5f9;
-      --blanco:#ffffff;
-      --negro:#0b1220;
-      --radius:18px;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif;color:var(--gris);background:var(--claro)}
-    a{color:var(--azul);text-decoration:none}
-    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(255,255,255,.8);border-bottom:1px solid #e5e7eb;z-index:10}
-    .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .brand{display:flex;gap:12px;align-items:center}
-    .brand .logo{width:40px;height:40px;border-radius:50%;background:conic-gradient(from 180deg at 50% 50%, var(--azul), var(--verde));display:grid;place-items:center;color:#fff;font-weight:800}
-    .brand h1{font-size:18px;margin:0;color:var(--negro)}
-    .nav a{margin-left:16px;font-weight:600}
-    .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center;padding:56px 0}
-    .card{background:var(--blanco);border:1px solid #e5e7eb;border-radius:var(--radius);box-shadow:0 10px 30px rgba(2,6,23,.06)}
-    .p24{padding:24px}
-    .hero h2{font-size:36px;line-height:1.1;margin:0 0 10px;color:var(--negro)}
-    .hero p{font-size:18px;margin:0 0 18px}
-    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0}
-    .badge{font-size:13px;padding:8px 12px;border-radius:999px;background:linear-gradient(90deg,var(--azul),var(--verde));color:#fff;font-weight:700}
-    .cta{display:flex;gap:12px;margin-top:10px}
-    .btn{display:inline-block;background:var(--azul);color:#fff;padding:12px 16px;border-radius:12px;font-weight:700;border:0;cursor:pointer}
-    .btn.alt{background:var(--verde)}
-    .illus{aspect-ratio:4/3;border-radius:var(--radius);background:linear-gradient(135deg, #dbeafe, #ccfbf1);display:grid;place-items:center;border:1px solid #e5e7eb}
-    section{padding:20px 0}
-    h2{margin-bottom:30px;color:var(--negro);text-align:center;font-size:2em}
-    h3{margin:0 0 12px;color:var(--negro);font-size:24px}
-    .grid{display:grid;gap:20px}
-    .grid.cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
-    .grid.cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
-    ul{margin:8px 0 0 20px}
-    .footer{margin:40px 0 60px;color:#475569;font-size:14px;text-align:center}
-    .kicker{font-size:13px;font-weight:800;color:var(--azul);letter-spacing:.08em;text-transform:uppercase}
-    .pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid #e5e7eb;border-radius:999px;padding:8px 12px;font-weight:600}
-    .stack{display:flex;flex-direction:column;gap:10px}
-
-    /* NUEVOS ESTILOS PARA BLOQUES DE SERVICIO/LAB/CALIDAD/CONTACTO */
-    .servicio {
-      background-color: #ffffff;
-      border-left: 5px solid var(--verde);
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      transition: transform 0.2s;
-    }
-    .servicio:hover { transform: translateY(-5px); }
-    .servicio h3 { font-size:1.5em; color: var(--verde); margin-bottom:10px; }
-    .servicio ul { list-style-type: disc; padding-left:20px; color:#34495e; font-size:1.1em; }
-
-    @media (max-width:920px){
-      .hero{grid-template-columns:1fr}
-      .nav{flex-wrap:wrap;gap:8px}
-      .grid.cols-3,.grid.cols-2{grid-template-columns:1fr}
-    }
-    @media (max-width:600px){
-      .servicio{padding:15px}
-      .servicio h3{font-size:1.3em}
-      .servicio ul{font-size:1em}
+    :root {
+      --azul: #0b6fbf;
+      --verde: #0a9d8c;
+      --gris: #334155;
+      --claro: #f1f5f9;
+      --blanco: #ffffff;
+      --negro: #0b1220;
+      --radius: 18px;
     }
 
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Inter, Arial, sans-serif; background: var(--claro); color: var(--gris); }
+    a { color: var(--azul); text-decoration: none; }
+    header { position: sticky; top: 0; backdrop-filter: saturate(180%) blur(8px); background: rgba(255,255,255,0.8); border-bottom: 1px solid #e5e7eb; z-index: 10; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; }
+    .brand { display: flex; gap: 12px; align-items: center; }
+    .brand .logo { width: 40px; height: 40px; border-radius: 50%; background: conic-gradient(from 180deg at 50% 50%, var(--azul), var(--verde)); display: grid; place-items: center; color: #fff; font-weight: 800; }
+    .brand h1 { font-size: 18px; margin: 0; color: var(--negro); }
+    .nav a { margin-left: 16px; font-weight: 600; }
+
+    /* Hero */
+    .hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 28px; align-items: center; padding: 56px 0; }
+    .card { background: var(--blanco); border-radius: var(--radius); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .p24 { padding: 24px; }
+    .hero h2 { font-size: 36px; margin: 0 0 10px; color: var(--negro); line-height: 1.2; }
+    .hero p { font-size: 18px; margin: 0 0 18px; }
+    .badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+    .badge { font-size: 13px; padding: 8px 12px; border-radius: 999px; background: linear-gradient(90deg,var(--azul),var(--verde)); color: #fff; font-weight: 700; }
+    .cta { display: flex; gap: 12px; margin-top: 10px; }
+    .btn { display: inline-block; background: var(--azul); color: #fff; padding: 12px 16px; border-radius: 12px; font-weight: 700; border: 0; cursor: pointer; }
+    .btn.alt { background: var(--verde); }
+
+    .illus { aspect-ratio: 4/3; border-radius: var(--radius); background: linear-gradient(135deg, #dbeafe, #ccfbf1); display: grid; place-items: center; }
+
+    section { padding: 40px 0; }
+    h2 { text-align: center; font-size: 2em; color: var(--negro); margin-bottom: 30px; }
+    h3 { font-size: 1.5em; margin-bottom: 10px; color: var(--negro); }
+    ul { margin: 8px 0 0 20px; color: #334155; }
+    .grid { display: grid; gap: 20px; }
+    .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .footer { text-align: center; margin: 40px 0 60px; color: #475569; font-size: 14px; }
+    .kicker { font-size: 13px; font-weight: 800; color: var(--azul); letter-spacing: .08em; text-transform: uppercase; }
+    .pill { display: inline-flex; align-items: center; gap: 8px; background: #fff; border: 1px solid #e5e7eb; border-radius: 999px; padding: 8px 12px; font-weight: 600; }
+    .stack { display: flex; flex-direction: column; gap: 10px; }
+
+    /* Servicios y tarjetas */
+    .servicio { padding: 20px; background: #fefefe; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: transform 0.2s; }
+    .servicio:hover { transform: translateY(-3px); }
+    .servicio h3 { color: var(--azul); }
+    .servicio ul { font-size: 1.1em; }
+
+    @media (max-width: 920px) {
+      .hero { grid-template-columns: 1fr; }
+      .grid.cols-2 { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -92,7 +81,6 @@
   </header>
 
   <main class="wrap">
-
     <!-- Hero -->
     <section class="hero">
       <div class="card p24">
@@ -121,29 +109,31 @@
     <!-- Servicios -->
     <section id="servicios">
       <h2>Servicios</h2>
-      <div class="servicio">
-        <h3>Identificación taxonómica de Macrofauna Bentónica</h3>
-        <ul><li>Abundancia y Biomasa</li></ul>
-      </div>
-      <div class="servicio">
-        <h3>Índice AMBI (Índice Biótico Marino AZTI)</h3>
-        <ul><li>Valor según magnitud del proyecto</li></ul>
-      </div>
-      <div class="servicio">
-        <h3>Análisis de Zooplancton</h3>
-        <ul><li>Biovolumen</li><li>Identificación de grupos mayores</li><li>Identificación a nivel de especie</li></ul>
-      </div>
-      <div class="servicio">
-        <h3>Ictioplancton</h3>
-        <ul><li>Identificación</li></ul>
-      </div>
-      <div class="servicio">
-        <h3>Caligus rogercresseyi</h3>
-        <ul><li>Presencia y cuantificación</li></ul>
-      </div>
-      <div class="servicio">
-        <h3>Identificación de Fitoplancton</h3>
-        <ul><li>Análisis taxonómico</li></ul>
+      <div class="grid cols-2">
+        <div class="servicio">
+          <h3>Identificación taxonómica de Macrofauna Bentónica</h3>
+          <ul><li>Abundancia y Biomasa</li></ul>
+        </div>
+        <div class="servicio">
+          <h3>Índice AMBI (Índice Biótico Marino AZTI)</h3>
+          <ul><li>Valor según magnitud del proyecto</li></ul>
+        </div>
+        <div class="servicio">
+          <h3>Análisis de Zooplancton</h3>
+          <ul><li>Biovolumen</li><li>Identificación de grupos mayores</li><li>Identificación a nivel de especie</li></ul>
+        </div>
+        <div class="servicio">
+          <h3>Ictioplancton</h3>
+          <ul><li>Identificación</li></ul>
+        </div>
+        <div class="servicio">
+          <h3>Caligus rogercresseyi</h3>
+          <ul><li>Presencia y cuantificación</li></ul>
+        </div>
+        <div class="servicio">
+          <h3>Identificación de Fitoplancton</h3>
+          <ul><li>Análisis taxonómico</li></ul>
+        </div>
       </div>
     </section>
 
